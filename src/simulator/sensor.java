@@ -44,7 +44,7 @@ public class sensor extends javax.swing.JFrame {
                     l = 0;
                     int valor = r.nextInt((100 - 1) + 1);
                     try {
-                        p.runShellCommand("https://utp-distribuido.firebaseio.com/sensor.json", "{\"tipo\":1,\"valor\":" + valor + "}");
+                        p.runShellCommand("---url de proyecto firebase/sensor.json", "{\"tipo\":1,\"valor\":" + valor + "}");
                     } catch (IOException ex) {
                         Logger.getLogger(sensor.class.getName()).log(Level.SEVERE, null, ex);
                     }
